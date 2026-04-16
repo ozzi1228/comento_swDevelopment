@@ -1,0 +1,13 @@
+<mapper namespace="com.demo.comentoStatistic.backendspringbootproject.dao">
+  <select id="selectYearLogin" parameterType="string" resultType="YearCountDto">
+    select concat('20', #{year}) as year, count(*) as totalCnt
+    from statistic.request_info ri
+    where left(ri.create_date, 2) = #{year};
+  </select>
+
+  <select id="selectYearMonthLogin" parameterType="string" resultType="YearMonthCountDto">
+    select concat('20', #{yearMonth} as yearMonth, count(*) as totalCnt
+    from statistic.request_info ri
+    where left(ri.create_date, 4) = #{yearMonth}
+  </select>
+</mapper>
