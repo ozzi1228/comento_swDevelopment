@@ -11,9 +11,10 @@
 
 | 구분                 | 기술                                       |
 |--------------------|------------------------------------------|
-| Backend            | JDK17, Spring Boot 4.0.5, MyBatis        |
+| Backend            | JDK17, Spring Boot 4.0.5, MyBatis        | 
 | DB                 | MariaDB                                  |
 | Infra / Deployment | AWS EC2, AWS RDS, Docker, GitHub Actions |
+| Frontend           | JavaScript, React                        
 | Version Control    | Git, GitHub                              |
 
 # 3. 문서 목록
@@ -32,3 +33,5 @@
 
 - [X] API 문서 초안 작성
 - [X] 로그인 횟수 통계 API 개발
+- [ ] 데이터 생성용 화면 로그인 버튼 개발
+  <br> : 클릭 시 2024년도 ~ 2026년도 03월까지 중 임의 날짜를 랜덤으로 설정하여 로그인 기록 생성
